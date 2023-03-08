@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+
+<servlet>
+<servlet-name>s1</servlet-name>
+<servlet-class>HelloServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>s1</servlet-name>
+<url-pattern>/servlet1</url-pattern>
+</servlet-mapping>
+
+<filter>
+<filter-name>s1</filter-name>
+<filter-class>Myfilter</filter-class>
+</filter>
+
+
+<filter-mapping>
+<filter-name>f1</filter-name>
+<url-pattern>/servlet1</url-pattern>
+</filter-mapping>
+
+</web-app>
